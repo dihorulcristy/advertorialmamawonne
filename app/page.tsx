@@ -328,7 +328,7 @@ export default function Home() {
             <p className="mb-6 text-gray-700">Erfahren Sie mehr über das orthopädische Lagerungskissen, das Mia geholfen hat.</p>
             <Link
               href={productLink}
-              className="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold text-lg py-4 px-8 rounded-full shadow-lg transform transition hover:-translate-y-1"
+              className="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold text-lg py-4 px-8 rounded-full shadow-lg transform transition hover:-translate-y-1 animate-pulse"
             >
               HIER KLICKEN: Mehr über das Lagerungskissen erfahren →
             </Link>
@@ -338,7 +338,8 @@ export default function Home() {
         </article>
       </main>
 
-      <footer className="bg-gray-100 py-8 mt-12 border-t text-center text-sm text-gray-500">
+
+      <footer className="bg-gray-100 py-8 mt-12 border-t text-center text-sm text-gray-500 mb-20 md:mb-0">
         <p>© {new Date().getFullYear()} MamaWonne. Alle Rechte vorbehalten.</p>
         <div className="mt-2 space-x-4">
           <Link href="https://mamawonne.de/policies/privacy-policy" className="hover:underline">Datenschutzerklärung</Link>
@@ -346,6 +347,16 @@ export default function Home() {
           <Link href="https://mamawonne.de/policies/legal-notice" className="hover:underline">Impressum</Link>
         </div>
       </footer>
+
+      {/* Sticky Bottom CTA */}
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] md:hidden z-50">
+        <Link
+          href={productLink}
+          className="block w-full bg-pink-600 text-white text-center font-bold py-3 rounded-lg shadow-md hover:bg-pink-700 transition"
+        >
+          Kissen ansehen & Verfügbarkeit prüfen
+        </Link>
+      </div>
     </div>
   );
 }
