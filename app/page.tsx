@@ -321,7 +321,12 @@ export default function Home() {
 
           <p className="font-bold text-gray-900 mb-8">Ich würde keine Woche mehr warten.</p>
 
-
+          <div className="bg-gray-50 border-l-4 border-pink-400 p-6 my-8 rounded-r-lg shadow-sm">
+            <p className="font-bold text-gray-900 mb-2">Ein Tipp von anderen Mamas:</p>
+            <p className="text-gray-700 italic m-0">
+              „Um zu vermeiden, dass das Baby aufwacht, wenn du es vom Bettchen in den Kinderwagen legst, stelle sicher, dass du an beiden Orten ein Kissen hast. Aus diesem Grund haben wir das 2er-Pack (Zuhause & Unterwegs) mit kostenlosem Versand zusammengestellt. Prüfe die Verfügbarkeit der Pakete und Rabatte auf der nächsten Seite.“
+            </p>
+          </div>
 
           <div className="bg-pink-50 border border-pink-100 rounded-xl p-8 text-center my-10 shadow-sm">
             <h3 className="text-xl font-bold text-gray-900 mb-4">Schützen Sie die Kopfform Ihres Babys</h3>
